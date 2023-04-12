@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Google</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+           background-color: #a0afcf;
+		}
+		header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 60px;
+			background-color: #a8adb4;
+			padding: 0 16px;
+			border-bottom: 1px solid #ccc;
+		}
+		.logo {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		nav {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+		nav a {
+			text-decoration: none;
+			color: #202124;
+			font-size: 14px;
+			margin-right: 12px;
+		}
+		nav a:hover {
+			text-decoration: underline;
+		}
+		.search-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 120px;
+		}
+		input[type=text] {
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+			width: 500px;
+			font-size: 16px;
+			margin-right: 16px;
+		}
+		input[type=submit] {
+			background-color: #4285f4;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			padding: 12px 20px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: #3367d6;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="logo">Google</div>
+		<nav>
+			<a href="#">Gmail</a>
+			<a href="#">Images</a>
+			<a href="#">Apps</a>
+			<a href="#">More</a>
+			<a href="#">Sign in</a>
+		</nav>
+	</header>
+	<div class="search-container">
+		<form>
+			<input type="text" placeholder="Search...">
+			<input type="submit" value="Google Search">
+			<input type="submit" value="I'm Feeling Lucky">
+		</form>
+	</div>
+</body>
+</html>

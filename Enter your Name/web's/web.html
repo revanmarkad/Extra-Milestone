@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My App</h1>
+    </header>
+    <main>
+        <label for="name-input">Enter your name:</label>
+        <input type="text" id="name-input">
+        <button id="submit-button">Submit</button>
+        <div id="greeting"></div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2023</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
+<script>
+
+
+
+    const submitButton = document.getElementById("submit-button");
+    const nameInput = document.getElementById("name-input");
+    const greeting = document.getElementById("greeting");
+
+    submitButton.addEventListener("click", () => {
+        const name = nameInput.value;
+        if (name === "") {
+            alert("Please enter your name.");
+        } else {
+            greeting.textContent = `Hello, ${name}!`;
+            nameInput.value = "";
+        }
+    });
+
+</script>
